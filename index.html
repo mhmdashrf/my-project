@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>landing page</title>
+</head>
+
+<body>
+    <section>
+        <div class="sci"></div>
+        <header>
+            <a href="#" class="logo"><img src="./imges/logo3.png"></a>
+            <ul>
+                <li class="active"><a href="#">home</a></li>
+                <li><a href="#">what,s new</a></li>
+                <li><a href="#">contant</a></li>
+                <li><a href="#">resume</a></li>
+            </ul>
+
+        </header>
+        <div class="contant">
+            <div class="inbox">
+                <h2>its not just coffee<br>it,s <span>starbuacks</span></h2>
+                <p>Despite the fact that piranhas are relatively harmless, many people continue to believe the pervasive
+                    myth
+                    piranhas are dangerous to humans.This impression of piranhas is exacerbated by mischaracterization
+                    in popular media. For example</p>
+                <a href="#" class="">LEARN MORE</a>
+            </div>
+            <div class="imgbox">
+                <img src="./imges/img1.png" class="img">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="./imges/ko.png" onclick="imgSlider('imges/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="./imges/thumb1.png" onclick="imgSlider('imges/img3.png');changeCircleColor('#d752b1')"></li>
+            <li><img src="./imges/llll.png" onclick="imgSlider('imges/img1.png');changeCircleColor('#017143')"></li>
+
+
+        </ul>
+        <ul class="face">
+            <li><a href="#"><img src="./imges/facebook.png"></a></li>
+            <li><a href="#"><img src="./imges/instagram.png"></a></li>
+            <li><a href="#"><img src="./imges/twitter.png"></a></li>
+
+        </ul>
+
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything) {
+            document.querySelector('.img').src = anything;
+        }
+        function changeCircleColor(color) {
+            const sci = document.querySelector('.sci');
+            sci.style.background = color;
+        }
+
+    </script>
+</body>
+
+</html>
